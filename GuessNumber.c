@@ -15,7 +15,7 @@ int main(void){
 int setAnswer(void){
     srand(time(0));
     answer = rand()%100;
-    printf("%d\n", answer);
+    // printf("%d\n", answer);
 }
 
 int guessNumber(void){
@@ -30,7 +30,7 @@ int guessNumber(void){
         } else if (guess < answer) {
             printf("正解は%dより大きいです。\n", guess);
         } else {
-            printf("正解です！");
+            printf("あたり！%d回目で正解です！", turn);
             break;
         }
     }
